@@ -1,0 +1,23 @@
+/*
+
+    Universal selector: It will select each and every element on the page and apply the declarations given below.
+    This will make sure the browser doesn't add it's own (default) margin and or padding to elements that we don't want.
+
+ */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
